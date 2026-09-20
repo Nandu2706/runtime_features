@@ -14,6 +14,7 @@
  * Run it with:  npm start
  */
 
+
 const fs = require('fs');
 const path = require('path');
 
@@ -22,6 +23,7 @@ const INPUT = path.join(__dirname, 'sample-data.txt');
 const OUTPUT = path.join(__dirname, 'sample-copy.txt');
 
 // ── PART 1: read the whole file into memory, then log its size ──────────────
+// Demonstrates loading the complete file into memory.
 function readWholeFile() {
   fs.readFile(INPUT, (err, data) => {
     if (err) { 
